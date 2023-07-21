@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="mytodo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input-container">
+        <div class="input-input">
+          <input
+            type="text"
+            class="new-task-input"
+            placeholder="What do you have to do?"
+          />
+        </div>
+        <div class="input-btn">
+          <input type="submit" class="btn__add" value="Add task" />
+        </div>
+        <div class="input-del">
+          <img src="bin.png" class="bin-ico" alt="bin" />
+        </div>
+      </div>
+      <div class="list-container">
+        <div class="list-row">
+          <div class="list-content">
+            <div class="content">
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="cust-check"
+                name="checkbox"
+                value="yes"
+              />
+              <label for="cust-check"></label>
+
+              <p>Your task will be here!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="mytodo.js"></script>
+  </body>
+</html>

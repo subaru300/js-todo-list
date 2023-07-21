@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(135deg, #e26d00 50%, #ffa24b 50%);
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Courier New', sans-serif;
+}
+
+.wrapper {
+  background-color: #3c424a;
+  width: 400px;
+  height: 600px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.input-container {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2f3539;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-input {
+  margin-left: 20px;
+}
+
+.new-task-input {
+  background-color: #343a3f;
+  color: white;
+  opacity: 0.9;
+  height: 40px;
+  width: 250px;
+  border: 1px solid #2f3539;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.btn__add {
+  background-color: #bcbcbc;
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.2s ease;
+}
+
+.btn__add:hover {
+  background-color: rgb(45, 92, 223);
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.btn__add:active {
+  opacity: 0.5;
+}
+
+.input-del {
+  margin-right: 10px;
+}
+
+.bin-ico {
+  width: 25px;
+  height: 25px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 3px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+
+.list-container {
+  height: 475px;
+  margin: 0 20px;
+  overflow: scroll;
+}
+
+.list-content {
+  margin: 5px 0;
+  color: white;
+  opacity: 0.8;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+}
+
+.content {
+  display: flex;
+}
