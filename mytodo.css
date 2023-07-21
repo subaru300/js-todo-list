@@ -146,7 +146,7 @@ div::-webkit-scrollbar {
 @media (max-width: 480px) {
   .wrapper {
     width: 360px;
-    height: 480px;
+    height: 600px;
     margin-top: 20px;
   }
   .input-input {
