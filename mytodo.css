@@ -143,10 +143,26 @@ div::-webkit-scrollbar {
   display: none;
 }
 
+@media (max-width: 645px) {
+  .wrapper {
+    width: 480px;
+    height: 600px;
+    margin-top: 20px;
+  }
+  .new-task-input {
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+  }
+  .input-del {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 480px) {
   .wrapper {
     width: 360px;
-    height: 600px;
+    height: 480px;
     margin-top: 20px;
   }
   .input-input {
