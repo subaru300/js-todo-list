@@ -16,9 +16,9 @@ body {
 
 .wrapper {
   background-color: #3c424a;
-  width: 400px;
-  height: 600px;
-  margin-top: 50px;
+  width: 450px;
+  height: 650px;
+  margin-top: 30px;
   border-radius: 5px;
 }
 
@@ -40,7 +40,7 @@ body {
   color: white;
   opacity: 0.9;
   height: 40px;
-  width: 250px;
+  width: 280px;
   border: 1px solid #2f3539;
   border-radius: 5px;
   font-size: 20px;
@@ -74,7 +74,7 @@ body {
 }
 
 .input-del {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .bin-ico {
@@ -118,7 +118,7 @@ body {
 }
 
 .list-container {
-  height: 475px;
+  height: 525px;
   margin: 0 20px;
   overflow: scroll;
 }
@@ -127,7 +127,6 @@ body {
   margin: 5px 0;
   color: white;
   opacity: 0.8;
-
   text-align: left;
   margin-left: 20px;
   display: flex;
@@ -145,17 +144,17 @@ div::-webkit-scrollbar {
 
 @media (max-width: 645px) {
   .wrapper {
-    width: 420px;
-    height: 600px;
+    width: 460px;
+    height: 650px;
     margin-top: 20px;
   }
   .new-task-input {
     height: 40px;
-    width: 250px;
+    width: 280px;
     font-size: 20px;
   }
   .input-del {
-    margin-right: 20px;
+    margin-right: 25px;
   }
 }
 
@@ -163,7 +162,7 @@ div::-webkit-scrollbar {
   .wrapper {
     width: 360px;
     height: 480px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .input-input {
     margin-left: 10px;
@@ -179,6 +178,12 @@ div::-webkit-scrollbar {
     width: 60px;
     height: 35px;
     line-height: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .list-container {
+    height: 370px;
   }
 
   .list-content {
