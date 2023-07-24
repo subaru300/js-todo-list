@@ -18,7 +18,8 @@ body {
   background-color: #3c424a;
   width: 450px;
   height: 650px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin: auto;
   border-radius: 5px;
 }
 
@@ -146,7 +147,8 @@ div::-webkit-scrollbar {
   .wrapper {
     width: 460px;
     height: 650px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: auto;
   }
   .new-task-input {
     height: 40px;
@@ -161,8 +163,9 @@ div::-webkit-scrollbar {
 @media (max-width: 480px) {
   .wrapper {
     width: 360px;
-    height: 480px;
-    margin-top: 10px;
+    height: 550px;
+    /* margin-top: 10px; */
+    margin: auto;
   }
   .input-input {
     margin-left: 10px;
@@ -183,7 +186,7 @@ div::-webkit-scrollbar {
   }
 
   .list-container {
-    height: 370px;
+    height: 430px;
   }
 
   .list-content {
