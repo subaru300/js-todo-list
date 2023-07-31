@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list</title>
     <link rel="stylesheet" href="mytodo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=IBM+Plex+Mono:wght@300&family=Nunito&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -17,29 +23,28 @@
           />
         </div>
         <div class="input-btn">
-          <div class="btn__add">Add task</div>
-        </div>
-        <div class="input-del">
-          <img src="bin.png" class="bin-ico" alt="bin" />
+          <div class="btn__add adaptive-add">
+            <img class="mobile-img" src="ic-add.png" alt="add-ico" />
+          </div>
+          <div class="btn__save adaptive-save">
+            <img class="mobile-img" src="ic-sav.png" alt="save-ico" />
+          </div>
+          <div class="btn__clear adaptive-clear">
+            <img class="mobile-img" src="ic-del.png" alt="del-ico" />
+          </div>
         </div>
       </div>
       <div class="list-container">
-        <div class="list-row">
-          <div class="list-content">
-            <div class="content">
-              <input
-                type="checkbox"
-                class="custom-checkbox"
-                id="cust-check"
-                name="checkbox"
-                value="yes"
-              />
-              <label for="cust-check"></label>
-
-              <p>Your task will be here!</p>
+        <ul class="todos">
+          <!-- <li class="li">
+            <div class="list-row">
+              <div class="todo-text">Go to market</div>
+              <div class="todo-trash">
+                <img class="bin-ico" src="/my-todo/bin.png" alt="bin" />
+              </div>
             </div>
-          </div>
-        </div>
+          </li> -->
+        </ul>
       </div>
     </div>
 
