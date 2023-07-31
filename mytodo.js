@@ -27,7 +27,7 @@ function onPageLoaded() {
     delBtn.classList.add('todo-trash');
     const icon = document.createElement('img');
     icon.classList.add('bin-ico');
-    icon.src = '/my-todo/bin.png';
+    icon.src = 'bin.png';
     delBtn.appendChild(icon);
 
     container.append(textDiv, delBtn);
